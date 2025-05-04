@@ -850,3 +850,89 @@ textarea {
     transform: translateY(-5px) scale(1.01);
   }
 }
+
+/* Lớp CSS để làm cho hình ảnh lớn hơn không có hiệu ứng hover */
+.larger-image {
+  max-width: 100% !important; 
+  transform: scale(1.3); 
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 767px) {
+  .larger-image {
+    max-width: 100% !important;
+    transform: scale(1.2);
+  }
+}
+
+@media (min-width: 992px) {
+  .larger-image {
+    max-width: 100% !important;
+    transform: scale(1.4);
+  }
+}
+
+/* Product Modal Styles */
+.modal-dialog.modal-lg {
+  max-width: 900px;
+}
+
+.modal-content {
+  border-radius: 0;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.modal-body {
+  padding: 1rem 2rem 2rem;
+}
+
+.product-title.fw-bold {
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.rating {
+  font-size: 24px;
+}
+
+.product-details h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.product-details p {
+  color: #6a6a6a;
+  line-height: 1.6;
+}
+
+.btn-primary.w-100 {
+  background-color: #f9bf29;
+  border-color: #f9bf29;
+  color: #3b5d50;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+}
+
+.btn-primary.w-100:hover {
+  background-color: #3b5d50;
+  border-color: #3b5d50;
+  color: #ffffff;
+}
+
+.modal img.img-fluid {
+  width: 100%;
+  height: auto;
+}
