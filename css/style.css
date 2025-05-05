@@ -936,3 +936,30 @@ textarea {
   width: 100%;
   height: auto;
 }
+
+/* Tăng kích thước của hình ảnh trong phần hero */
+.hero .big-image {
+  max-width: 100%;
+  height: auto;
+  width: 800px; /* Điều chỉnh kích thước theo ý muốn */
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  right: 0;
+  top: 0;
+}
+
+@media (max-width: 767px) {
+  .hero .big-image {
+    width: 100%;
+    max-width: 400px; /* Điều chỉnh kích thước cho màn hình nhỏ */
+    margin: 20px auto 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero .big-image {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
